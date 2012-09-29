@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainA" android:launchMode="singleTop" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" >
+            android:name=".MainA" android:launchMode="singleTask" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

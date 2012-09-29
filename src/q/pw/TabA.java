@@ -5,6 +5,19 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.widget.RadioButton;
 
+/**
+ * qqqqqqQ1
+ * lhqqqqQ1
+ * 
+ * qqqxxxX0
+ * lhqxxxX0
+ * 
+ * qqqxxxX0{a}{0}
+ * lhqxxxX0{a}{0}
+ * 
+ * 密码在ubuntu中修改
+ * 登录邮箱尽量改成q@xxd.cn
+ */
 public class TabA extends Q.view.tab.base {
 
     @Override

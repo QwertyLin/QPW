@@ -17,10 +17,9 @@ public class Level3A extends ListActivity {
         //
 		d.add(new Pw("cmbchina", "招行"));
 		d.add(new Pw("icbc", "工行"));
-        d.add(new Pw("qq", "12325140、123816"));
+		d.add(new Pw("qqmail", "12325140、123816"));
         d.add(new Pw("tenpay", "12325140、123816"));
-        d.add(new Pw("taobao", "q123816"));
-        d.add(new Pw("alipay", "支付宝"));
+        d.add(new Pw("alipay", "12325140@qq.com"));
         d.add(new Pw("alimama", "123816@qq.com"));
         d.add(new Pw("ename", "11429"));
         //
