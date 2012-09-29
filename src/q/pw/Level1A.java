@@ -7,7 +7,7 @@ import q.pw.bean.Pw;
 import android.app.ListActivity;
 import android.os.Bundle;
 
-public class Level1A extends ListActivity {
+public class Level1A extends ListActivity { 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
