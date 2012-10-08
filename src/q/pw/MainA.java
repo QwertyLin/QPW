@@ -1,7 +1,7 @@
 package q.pw;
 
-import q.util.Q;
-import q.util.QLog;
+import q.QLog;
+import q.os.QWindowManager;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,8 +16,8 @@ public class MainA extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		width = Q.os.window.manager(this).getWidth() / 2;
-		height = Q.os.window.manager(this).getHeight() / 2;
+		width = QWindowManager.getInstance(this).getWidth() / 2;
+		height = QWindowManager.getInstance(this).getHeight() / 2;
 	}
 	
 	@Override
@@ -27,7 +27,7 @@ public class MainA extends Activity {
 		case MotionEvent.ACTION_MOVE:
 			x = event.getX();
 			y = event.getY();
-			Q.log.kv(this, "onTouchEvent", "xy", x + " " + y);
+			QLog.kv(this, "onTouchEvent", "xy", x + " " + y);
 			if(x > width && y < height){
 				s2 = true;
 				s1 = s3 = s4 = false;
