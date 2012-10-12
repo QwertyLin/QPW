@@ -10,14 +10,14 @@ import q.pw.R;
 import q.pw.bean.Pw;
 import qv.adapter.QAdapterBase;
 
-public class PwAdapter extends QAdapterBase<Pw> {
+public class PwAdapter extends QAdapterBase<Pw, PwAdapter.Holder> {
 
 	public PwAdapter(Context ctx, List<Pw> data) {
 		super(ctx, data);
 	}
 
 	@Override
-	protected Object getViewHolder(View v) {
+	protected Holder getHolder(View v) {
 		Holder h = new Holder();
 		h.tvName = (TextView)v.findViewById(R.id.name);
 		h.tvId = (TextView)v.findViewById(R.id.id);
@@ -26,11 +26,10 @@ public class PwAdapter extends QAdapterBase<Pw> {
 	}
 
 	@Override
-	protected void onInitItem(int position, Pw data, Object viewHolder) {
-		Holder h = (Holder)viewHolder;
-		h.tvName.setText(data.getName());
-		h.tvId.setText(data.getId());
-		h.tvCode.setText(initCode(data.getName()));
+	protected void initItem(int position, Pw data, Holder holder) {
+		holder.tvName.setText(data.getName());
+		holder.tvId.setText(data.getId());
+		holder.tvCode.setText(initCode(data.getName()));
 	}
 
 	@Override
