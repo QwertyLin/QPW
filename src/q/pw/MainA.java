@@ -1,7 +1,7 @@
 package q.pw;
 
-import q.QLog;
-import q.os.QWindowManager;
+import q.pw.util.QLog;
+import q.pw.util.WindowMgr;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,8 +16,8 @@ public class MainA extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		width = QWindowManager.getInstance(this).getWidth() / 2;
-		height = QWindowManager.getInstance(this).getHeight() / 2;
+		width = WindowMgr.getInstance(this).getWidth() / 2;
+		height = WindowMgr.getInstance(this).getHeight() / 2;
 	}
 	
 	@Override

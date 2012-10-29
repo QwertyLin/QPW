@@ -5,12 +5,12 @@ import java.util.List;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
-import q.code.QCodeUtil;
 import q.pw.R;
 import q.pw.bean.Pw;
-import qv.adapter.QAdapterBase;
+import q.pw.util.AdapterBase;
+import q.pw.util.CodeUtil;
 
-public class PwAdapter extends QAdapterBase<Pw, PwAdapter.Holder> {
+public class PwAdapter extends AdapterBase<Pw, PwAdapter.Holder> {
 
 	public PwAdapter(Context ctx, List<Pw> data) {
 		super(ctx, data);
@@ -47,8 +47,7 @@ public class PwAdapter extends QAdapterBase<Pw, PwAdapter.Holder> {
 		String code = null;
 		StringBuffer sb = new StringBuffer();
 		try {
-			code = QCodeUtil.desEncode("QQQQQQQQ", name + name + name + name);
-			
+			code = CodeUtil.desEncode("QQQQQQQQ", name + name + name + name);
 			for(char c : code.toCharArray()){
 				if(sb.length() == 4){
 					break;
