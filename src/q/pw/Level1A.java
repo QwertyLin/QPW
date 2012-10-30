@@ -15,9 +15,8 @@ public class Level1A extends ListActivity {
 		//
 		ArrayList<Pw> d = new ArrayList<Pw>();
 		//
-		d.add(new Pw("qq", "12325140、123816"));
-		d.add(new Pw("taobao", "q123816"));
 		d.add(new Pw("weibo", "123816@qq.com"));
+		d.add(new Pw("github", "q@xxd.cn"));
 		d.add(new Pw("evernote", "linhqe"));
         d.add(new Pw("poco", "q@xxd.cn"));
         //

@@ -22,6 +22,7 @@ public class Level3A extends ListActivity {
         d.add(new Pw("alipay", "12325140@qq.com"));
         d.add(new Pw("alimama", "123816@qq.com"));
         d.add(new Pw("ename", "11429"));
+        d.add(new Pw("js808", "linhq"));
         //
 		setListAdapter(new PwAdapter(this, d));
 	}
