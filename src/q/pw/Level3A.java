@@ -16,9 +16,10 @@ public class Level3A extends ListActivity {
 		ArrayList<Pw> d = new ArrayList<Pw>();
         //
 		d.add(new Pw("js808", "linhq"));
+		d.add(new Pw("edai365", "linhq"));
 		d.add(new Pw("ename", "11429"));
 		d.add(new Pw("ecitic", ""));
-		
+		d.add(new Pw("cgbchina", "linhq"));
 		
 		d.add(new Pw("cmbchina", "招行"));
 		d.add(new Pw("icbc", "工行"));
