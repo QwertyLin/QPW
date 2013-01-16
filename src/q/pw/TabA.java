@@ -8,17 +8,8 @@ import android.widget.RadioButton;
 /**
  * qqqqqqQ1
  * lhqqqqQ1
- * 
- * 常用，有令牌或U盾
  * qqqxxxX0
  * lhqxxxX0
- * 
- * 重要且少防护
- * qqqxxxX0{a}{0}
- * lhqxxxX0{a}{0}
- * 
- * 密码在ubuntu中修改
- * 登录邮箱尽量改成q@xxd.cn
  */
 public class TabA extends TabActivityBase {
 

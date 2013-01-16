@@ -19,7 +19,9 @@ public class Level2A extends ListActivity {
 		d.add(new Pw("tenpay", "12325140、123816"));
 		
 		d.add(new Pw("taobao", "q123816"));
-		d.add(new Pw("elance", "haiqiang"));
+		d.add(new Pw("elance", "haiq87"));
+		d.add(new Pw("facebook", "haiq87"));
+		d.add(new Pw("twitter", "haiq87"));
 		//
 		setListAdapter(new PwAdapter(this, d));
 	}
