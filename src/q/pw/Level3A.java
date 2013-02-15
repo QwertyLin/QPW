@@ -17,6 +17,8 @@ public class Level3A extends ListActivity {
         //
 		d.add(new Pw("js808", "linhq"));
 		d.add(new Pw("edai365", "linhq"));
+		d.add(new Pw("zfxindai", "linhq"));
+		
 		d.add(new Pw("ename", "11429"));
 		d.add(new Pw("ecitic", ""));
 		d.add(new Pw("cgbchina", "linhq"));
