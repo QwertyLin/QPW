@@ -1,5 +1,6 @@
 package q.pw.util;
 
+import q.pw.R;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,28 +24,17 @@ public abstract class TabActivityBase extends TabActivity implements OnCheckedCh
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent[] intent = onInitIntent();
+		setContentView(R.layout.tabhost);
 		//
-		tabHost = new TabHost(this);
-		tabHost.setId(android.R.id.tabhost);
+		tabHost = getTabHost();
 		//
-		LinearLayout linear = new LinearLayout(this);
-		linear.setOrientation(LinearLayout.VERTICAL);
-		tabHost.addView(linear);
-		//
-		TabWidget tabwidget = new TabWidget(this);
-		tabwidget.setId(android.R.id.tabs);
-		tabwidget.setVisibility(View.GONE);
-		linear.addView(tabwidget);
-		//
-		if(getTabDirection(0, 1) == 0){
+		/*if(getTabDirection(0, 1) == 0){
 			linear.addView(initRadioGroup(intent.length));
 			linear.addView(initFrameLayout());
 		}else{
 			linear.addView(initFrameLayout());
 			linear.addView(initRadioGroup(intent.length));
-		}
-		//
-		setContentView(tabHost);
+		}*/
 		//
 		for(int i = 0, size = intent.length; i < size; i++){
 			tabHost.addTab(tabHost.newTabSpec("").setIndicator("").setContent(intent[i]));

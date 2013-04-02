@@ -20,6 +20,7 @@
         </activity>
         
         <activity android:name=".TabA" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".LevelA" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity android:name=".Level1A" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar"  />
         <activity android:name=".Level2A" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity android:name=".Level3A" android:screenOrientation="portrait"  android:theme="@android:style/Theme.Light.NoTitleBar" />

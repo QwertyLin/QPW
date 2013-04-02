@@ -51,7 +51,7 @@ public class MainA extends Activity {
 				synchronized (this) {
 					if(s1 && s2 && s3 && s4){
 						s1 = s2 = s3 = s4 = false;
-						startActivity(new Intent(MainA.this, TabA.class));
+						startActivity(new Intent(MainA.this, LevelA.class));
 						finish();
 					}
 					return true;
